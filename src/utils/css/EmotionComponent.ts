@@ -13,6 +13,25 @@ export const mainWrapper = css`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+`;
+
+export const title = css`
+  color: white;
+  font-family: Segoe Script;
+  position: absolute;
+  top: 150px;
+`;
+
+export const modeContainer = css`
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  & img {
+    margin: 10px;
+    cursor: pointer;
+  }
 `;
 
 export const inputContainer = css`
@@ -65,9 +84,5 @@ export const inputBottomItem = css`
   font-size: 27px;
   cursor: pointer;
   box-shadow: none;
-
-  :hover {
-    transition: all 0.3s;
-    box-shadow: 0px 0px 29px #00b2ff;
-  }
+  transition: all 0.6s;
 `;

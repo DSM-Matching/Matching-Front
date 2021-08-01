@@ -6,28 +6,40 @@ import {
   inputContainer,
   inputTopItem,
   mainWrapper,
+  modeContainer,
+  title,
 } from "../../utils/css/EmotionComponent";
+import { blackModeIcon, whiteModeIcon } from "../assets";
 
 const DarkMain = () => {
   const [inputState, setInputState] = useState<boolean>(false);
   return (
     <>
       <div css={mainWrapper}>
+        <div css={modeContainer}>
+          <img src={whiteModeIcon} alt="화이트모드아이콘" />
+          <img src={blackModeIcon} alt="다크모드아이콘" />
+        </div>
+        <h1 css={title}>즐거운 Matching 시작</h1>
         <div css={inputContainer}>
           <div css={inputTopItem}>
             <p>Please enter a nickname.</p>
             <input
               type="text"
               placeholder="your nickName"
-              onChange={
-                (e) =>
-                  e.target.value.length === 0
-                    ? console.log("false") /* setInputState(false) */
-                    : console.log("히히") /* setInputState(true) */
+              onChange={(e) =>
+                e.target.value.length === 0
+                  ? setInputState(false)
+                  : setInputState(true)
               }
             />
           </div>
-          <div css={[inputTopItem, inputBottomItem]}>join</div>
+          <div
+            css={[inputTopItem, inputBottomItem]}
+            style={{ boxShadow: inputState ? "0px 0px 29px #00b2ff" : "none" }}
+          >
+            join
+          </div>
         </div>
       </div>
     </>
