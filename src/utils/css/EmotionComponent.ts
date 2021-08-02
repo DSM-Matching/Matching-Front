@@ -1,7 +1,6 @@
 import { css } from "@emotion/react";
 import { blackBackground } from "../../components/assets";
-
-const darkMode = "#18002c";
+import { darkMode } from "../color";
 
 export const mainWrapper = css`
   width: 100vw;
@@ -36,11 +35,15 @@ export const modeContainer = css`
 
 export const inputContainer = css`
   width: 500px;
-  height: 300px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+`;
+
+export const firstContainer = css`
+  height: 300px;
 `;
 
 export const inputTopItem = css`
@@ -101,9 +104,13 @@ export const matchingLineCheck = css`
 
 export const matchingButton = css`
   width: 300px;
-  height: 80px;
-
+  height: 70px;
   background: #8f00ff;
   box-shadow: 0px 0px 20px #00b2ff;
   border-radius: 15px;
+  font-family: Segoe Script;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
 `;
