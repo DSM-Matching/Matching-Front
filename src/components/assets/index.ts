@@ -5,4 +5,4 @@ export { default as whiteModeIcon } from "./whiteModeIcon.svg";
 export { default as chatOutIcon } from "./chatOutIcon.svg";
 export { default as imageIcon } from "./imageIcon.svg";
 export { default as sendIcon } from "./sendIcon.svg";
-    
+export { default as chating1 } from "./chating1.svg";
