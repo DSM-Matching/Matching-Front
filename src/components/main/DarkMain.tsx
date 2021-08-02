@@ -1,34 +1,30 @@
 /** @jsxImportSource @emotion/react */
 
-import React, { FC, useState } from "react";
-import {
-  inputBottomItem,
-  inputContainer,
-  inputTopItem,
-  mainWrapper,
-} from "../../utils/css/EmotionComponent";
+import { useState } from "react";
+import { mainWrapper, modeContainer } from "../../utils/css/EmotionComponent";
+import { blackModeIcon, whiteModeIcon } from "../assets";
+import NickNameInput from "./NickNameInput";
+import WaitItem from "./WaitItem";
 
 const DarkMain = () => {
-  const [inputState, setInputState] = useState<boolean>(false);
+  const [changeComponent, setChangeComponent] = useState<boolean>(false);
+
   return (
     <>
       <div css={mainWrapper}>
-        <div css={inputContainer}>
-          <div css={inputTopItem}>
-            <p>Please enter a nickname.</p>
-            <input
-              type="text"
-              placeholder="your nickName"
-              onChange={
-                (e) =>
-                  e.target.value.length === 0
-                    ? console.log("false") /* setInputState(false) */
-                    : console.log("히히") /* setInputState(true) */
-              }
-            />
-          </div>
-          <div css={[inputTopItem, inputBottomItem]}>join</div>
+        <div css={modeContainer}>
+          <img src={whiteModeIcon} alt="화이트모드아이콘" />
+          <img src={blackModeIcon} alt="다크모드아이콘" />
         </div>
+        {changeComponent ? (
+          <>
+            <WaitItem />
+          </>
+        ) : (
+          <>
+            <NickNameInput setChangeComponent={setChangeComponent} />
+          </>
+        )}
       </div>
     </>
   );
