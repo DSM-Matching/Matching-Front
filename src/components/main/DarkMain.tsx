@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
-import React, { FC, useState } from "react";
+import { useState } from "react";
 import {
   inputBottomItem,
   inputContainer,
@@ -10,9 +10,11 @@ import {
   title,
 } from "../../utils/css/EmotionComponent";
 import { blackModeIcon, whiteModeIcon } from "../assets";
+import WaitItem from "./WaitItem";
 
 const DarkMain = () => {
   const [inputState, setInputState] = useState<boolean>(false);
+
   return (
     <>
       <div css={mainWrapper}>
@@ -21,12 +23,13 @@ const DarkMain = () => {
           <img src={blackModeIcon} alt="다크모드아이콘" />
         </div>
         <h1 css={title}>즐거운 Matching 시작</h1>
-        <div css={inputContainer}>
+        <WaitItem />
+        {/*  <div css={inputContainer}>
           <div css={inputTopItem}>
-            <p>Please enter a nickname.</p>
+            <span>Please enter a nickname.</span>
             <input
               type="text"
-              placeholder="your nickName"
+              placeholder="your nickname"
               onChange={(e) =>
                 e.target.value.length === 0
                   ? setInputState(false)
@@ -40,7 +43,7 @@ const DarkMain = () => {
           >
             join
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
