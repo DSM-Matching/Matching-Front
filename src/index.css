@@ -15,8 +15,8 @@ code {
 @import url("https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap");
 
 * {
-  margin: none;
+  margin: 0;
+  padding: 0;
   border: none;
   outline: none;
-  border: none;
 }
