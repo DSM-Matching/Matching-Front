@@ -53,6 +53,7 @@ const Chatting = () => {
             </li>
           </ul>
         </header>
+        <div></div>
       </section>
     </>
   );
