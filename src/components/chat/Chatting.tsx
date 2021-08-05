@@ -48,8 +48,8 @@ const Chatting = () => {
               </span>
             </li>
             <li>
-              <img src={whiteModeIcon} alt="" />
-              <img src={blackModeIcon} alt="" />
+              <img src={whiteModeIcon} alt="화이트모드" />
+              <img src={blackModeIcon} alt="다크모드" />
             </li>
           </ul>
         </header>
