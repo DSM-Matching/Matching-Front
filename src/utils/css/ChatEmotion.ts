@@ -9,25 +9,35 @@ export const chatContainer = css`
 
 export const header = css`
   width: 100%;
-  height: 60px;
-  border: 1px solid red;
+  height: 80px;
 
   & ul {
     display: flex;
     flex-direction: row;
-  }
-
-  & li {
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    color: white;
+    justify-content: space-between;
+
+    & li {
+      margin: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: white;
+
+      & img {
+        margin: 10px;
+        cursor: pointer;
+      }
+    }
   }
 
   .date {
     flex-direction: column;
   }
+
+  .date-time {
+    font-size: 18px;
+  }
 `;
 
-export const date = css``;
+export const chatOutput = css``;
