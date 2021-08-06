@@ -3,7 +3,7 @@
 import React from "react";
 
 import { chatContainer } from "../../utils/css/ChatEmotion";
-import { ChatHeader, ChatOutput } from "../index";
+import { ChatHeader, ChatOutput, ChatInput } from "../index";
 
 const Chatting = () => {
   return (
@@ -11,6 +11,7 @@ const Chatting = () => {
       <section css={chatContainer}>
         <ChatHeader />
         <ChatOutput />
+        <ChatInput />
       </section>
     </>
   );
