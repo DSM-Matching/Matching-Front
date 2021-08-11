@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import { DarkMain } from "./components";
+import { Chatting, DarkMain } from "./components";
 
 function App() {
   return (
     <>
-      <DarkMain />
+      {/* <DarkMain /> */}
+      <Chatting />
     </>
   );
 }
