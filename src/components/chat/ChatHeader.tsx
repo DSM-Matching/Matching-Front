@@ -3,23 +3,29 @@
 import { useEffect, useState } from "react";
 import { header } from "../../utils/css/ChatEmotion";
 import { blackModeIcon, chatOutIcon, whiteModeIcon } from "../assets";
+import moment from "moment";
 
 const ChatHeader = () => {
   const [dateState, setDateState] = useState<string>("오전");
+  const [time, setTime] = useState<any>(moment());
 
   const date = new Date();
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = String(date.getDate()).padStart(2, "0");
   const hours = date.getHours();
-  const min = String(date.getMinutes()).padStart(2, "0");
 
   useEffect(() => {
+    const clock = setInterval(() => {
+      setTime(moment());
+    }, 1000);
+
     if (hours < 12) {
       setDateState("오전");
     } else {
       setDateState("오후");
     }
+
+    return () => {
+      clearInterval(clock);
+    };
   }, [hours]);
 
   return (
@@ -30,11 +36,9 @@ const ChatHeader = () => {
           <span>채팅 나가기</span>
         </li>
         <li className="date">
-          <span className="date-time">
-            {year}년 {month}월 {day}일
-          </span>
+          <span className="date-time">{time.format("YYYY년 M월 D일")}</span>
           <span>
-            {dateState} {hours} : {min}
+            {dateState} {time.format("h : mm : ss")}
           </span>
         </li>
         <li>
