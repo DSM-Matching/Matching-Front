@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useState } from "react";
-import { inputItem, inputWrapper } from "../../utils/css/ChatEmotion";
+import { inputItem, inputWrapper, textInput } from "../../utils/css/ChatEmotion";
 import { imageIcon, sendIcon } from "../assets";
 
 const ChatInput = () => {
@@ -11,9 +11,12 @@ const ChatInput = () => {
       <div css={inputWrapper}>
         <ul css={inputItem}>
           <li>
-            <img src={imageIcon} alt="사진 첨부 아이콘" />
+            <label htmlFor="input-file">
+              <img src={imageIcon} alt="사진 첨부 아이콘" />
+            </label>
+            <input type="file" id="input-file" style={{ display: "none" }} />
           </li>
-          <li>
+          <li css={textInput}>
             <input type="text" placeholder="전송하실 문장을 입력해주세요." />
           </li>
           <li>
