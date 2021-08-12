@@ -4,8 +4,9 @@ import { useEffect, useState } from "react";
 import { header } from "../../utils/css/ChatEmotion";
 import { blackModeIcon, chatOutIcon, whiteModeIcon } from "../assets";
 import moment from "moment";
+import { modalOpenType } from "../../utils/interface/chatTypes";
 
-const ChatHeader = () => {
+const ChatHeader = ({ setModalOpen }: modalOpenType) => {
   const [dateState, setDateState] = useState<string>("오전");
   const [time, setTime] = useState<any>(moment());
 
@@ -33,7 +34,7 @@ const ChatHeader = () => {
       <ul>
         <li>
           <img src={chatOutIcon} alt="채팅나가기아이콘" />
-          <span>채팅 나가기</span>
+          <span onClick={() => setModalOpen(true)}>채팅 나가기</span>
         </li>
         <li className="date">
           <span className="date-time">{time.format("YYYY년 M월 D일")}</span>
