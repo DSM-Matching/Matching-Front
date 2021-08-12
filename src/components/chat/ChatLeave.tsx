@@ -5,6 +5,7 @@ import {
   ModalBackground,
   ModalItem,
   flexColumn,
+  buttonContainer,
 } from "../../utils/css/ModalEmotion";
 
 const ChatLeave = () => {
@@ -16,7 +17,7 @@ const ChatLeave = () => {
             <strong>김지민님</strong>
             <span>채팅 나가기를 하면 내용이 사라집니다.</span>
           </div>
-          <div>
+          <div css={buttonContainer}>
             <button>유지하기</button>
             <button>채팅 나가기</button>
           </div>
