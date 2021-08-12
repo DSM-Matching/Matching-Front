@@ -20,3 +20,22 @@ export const ModalItem = css`
   background: #ffffff;
   box-shadow: 0px 0px 29px #00b2ff;
 `;
+
+export const buttonContainer = css`
+  margin-top: 30px;
+
+  & button {
+    background: rgba(143, 0, 255, 0.3);
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.25));
+    width: 140px;
+    height: 34px;
+    margin: 15px;
+    color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+
+    :hover {
+      background: #8f00ff;
+    }
+  }
+`;
