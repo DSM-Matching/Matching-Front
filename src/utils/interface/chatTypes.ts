@@ -1,3 +1,4 @@
 export interface modalOpenType {
-  setModalOpen?: boolean;
+  setModalOpen?: any;
+  modalOpen?: boolean;
 }
