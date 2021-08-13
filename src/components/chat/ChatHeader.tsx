@@ -32,9 +32,14 @@ const ChatHeader = ({ setModalOpen }: modalOpenType) => {
   return (
     <header css={header}>
       <ul>
-        <li>
+        <li
+          onClick={() => {
+            setModalOpen(true);
+            console.log(true);
+          }}
+        >
           <img src={chatOutIcon} alt="채팅나가기아이콘" />
-          <span onClick={() => setModalOpen(true)}>채팅 나가기</span>
+          <span>채팅 나가기</span>
         </li>
         <li className="date">
           <span className="date-time">{time.format("YYYY년 M월 D일")}</span>
