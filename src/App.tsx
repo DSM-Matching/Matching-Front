@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { DarkMain } from "./components";
+import { WhiteMain } from "./components";
 
 function App() {
   return (
     <>
-      <DarkMain />
+      <WhiteMain />
     </>
   );
 }
