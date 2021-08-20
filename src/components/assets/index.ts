@@ -6,4 +6,6 @@ export { default as chatOutIcon } from "./chatOutIcon.svg";
 export { default as imageIcon } from "./imageIcon.svg";
 export { default as sendIcon } from "./sendIcon.svg";
 export { default as whiteBackground } from "./whiteBackground.svg";
-    
+export { default as whiteModeDarkIcon } from './whiteModeDarkIcon.svg';
+export { default as whiteModeWhiteIcon } from './whiteModeWhiteIcon.svg';
+export { default as matchingImg } from './matchingImg.svg';
