@@ -73,23 +73,18 @@ export const inputContainer = css`
   transform: translateY(-50%);
 `;
 
-export const nicknameinput = css`
-  width: 500px;
-  height: 200px;
-  background: white;
-`;
-
 export const inputTopItem = css`
   width: 100%;
   height: 200px;
   border: 1px solid #ffb2b2;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 0px 0px 29px rgba(255, 178, 178, 0.5);
+  box-shadow: 0px 0px 29px #F897DC;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: white;
 
   & span {
     font-family: Segoe Script;
@@ -125,5 +120,5 @@ export const joinButton = css`
   background: white;
   border: 1px solid #ffb2b2;
   box-sizing: border-box;
-  transition: 0.6s;
+  transition: all 0.6s;
 `;
