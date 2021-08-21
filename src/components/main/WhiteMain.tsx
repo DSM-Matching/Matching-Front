@@ -16,7 +16,15 @@ const WhiteMain = () => {
           <img src={whiteModeWhiteIcon} alt="화이트모드" />
           <img src={whiteModeDarkIcon} alt="다크모드" />
         </div>
-        {changeComponent ? <MatchWait /> : <NicknameInput />}
+        {changeComponent ? (
+          <>
+            <MatchWait />
+          </>
+        ) : (
+          <>
+            <NicknameInput setChangeComponent={setChangeComponent} />
+          </>
+        )}
       </div>
     </>
   );
