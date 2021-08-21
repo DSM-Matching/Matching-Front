@@ -79,7 +79,7 @@ export const inputTopItem = css`
   border: 1px solid #ffb2b2;
   box-sizing: border-box;
   border-radius: 5px;
-  box-shadow: 0px 0px 29px #F897DC;
+  box-shadow: 0px 0px 29px #;
   display: flex;
   align-items: center;
   justify-content: center;

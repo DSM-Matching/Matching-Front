@@ -31,3 +31,4 @@ const WhiteMain = () => {
 };
 
 export default WhiteMain;
+  
