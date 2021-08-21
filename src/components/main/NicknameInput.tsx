@@ -3,7 +3,8 @@
 import {
   inputContainer,
   inputTopItem,
-  nicknameinput,
+  joinButton,
+  nicknameinput
 } from "../../utils/css/EmotionComponent";
 
 const NicknameInput = () => {
@@ -14,6 +15,7 @@ const NicknameInput = () => {
           <span>Please enter a nickname.</span>
           <input type="text" placeholder="your nickname"/>
         </div>
+        <button css={joinButton}>join</button>
       </div>
     </div>
   );
