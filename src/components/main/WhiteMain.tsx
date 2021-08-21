@@ -7,7 +7,7 @@ import MatchWait from "./MatchWait";
 import NicknameInput from "./NicknameInput";
 
 const WhiteMain = () => {
-  const [changeComponent, setChangeComponent] = useState<boolean>(true);
+  const [changeComponent, setChangeComponent] = useState<boolean>(false);
 
   return (
     <>
