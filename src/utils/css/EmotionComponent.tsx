@@ -82,7 +82,7 @@ export const nicknameinput = css`
 export const inputTopItem = css`
   width: 100%;
   height: 200px;
-  border: 1px solid #FFB2B2;
+  border: 1px solid #ffb2b2;
   box-sizing: border-box;
   border-radius: 5px;
   box-shadow: 0px 0px 29px rgba(255, 178, 178, 0.5);
@@ -95,24 +95,35 @@ export const inputTopItem = css`
     font-family: Segoe Script;
     font-weight: bold;
     font-size: 30px;
-    color: #FFB2B2;
+    color: #ffb2b2;
     margin-bottom: 20px;
   }
 
-  & input{
+  & input {
     width: 200px;
     height: 40px;
     font-family: Indie Flower;
     font-size: 30px;
-    color: #FFB2B2;
+    color: #ffb2b2;
     text-align: center;
 
-    ::placeholder{
-      color: #FFB2B2;
+    ::placeholder {
+      color: #ffb2b2;
     }
   }
 `;
 
-export const inputBottomItem = css`
-  
-`
+export const joinButton = css`
+  width: 100%;
+  height: 65px;
+  margin-top: 30px;
+  font-size: 27px;
+  font-family: Segoe Script;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffb2b2;
+  background: white;
+  border: 1px solid #ffb2b2;
+  box-sizing: border-box;
+  transition: 0.6s;
+`;
