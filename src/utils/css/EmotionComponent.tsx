@@ -51,14 +51,18 @@ export const matchLoadingBar = css`
   margin: auto;
   background: white;
   margin-top: 20px;
-`
-
-export const matchLoadingCheckBar = css`
-  width: 100px;
-  background: #FFB2B2;
-  left: 0;
-`
+`;
 
 export const matchButton = css`
   width: 300px;
-`
+  margin: auto;
+  margin-top: 100px;
+  font-family: Segoe Script;
+  height: 70px;
+  font-size: 30px;
+  color: white;
+  background: #ffb2b2;
+  box-shadow: 0px 0px 20px #ffb2b2;
+  border-radius: 15px;
+  cursor: pointer;
+`;
