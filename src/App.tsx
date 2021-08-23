@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
-import { WhiteMain } from "./components";
+import { WhiteMain, Chatting } from "./components";
 
 function App() {
   return (
     <>
-      <WhiteMain />
+      {/* <WhiteMain /> */}
+      <Chatting/>
     </>
   );
 }
