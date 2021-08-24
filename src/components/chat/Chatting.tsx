@@ -4,6 +4,7 @@ import React from "react";
 import { chattingContainer } from "../../utils/css/ChattingEmotion";
 import ChatHeader from "./ChatHeader";
 import ChatInput from "./ChatInput";
+import ChatLeaveModal from "./ChatLeaveModal";
 import ChatOutput from "./ChatOutput";
 
 const Chatthing = () => {
@@ -14,6 +15,7 @@ const Chatthing = () => {
         <ChatHeader/>
         <ChatOutput/>
         <ChatInput/>
+        <ChatLeaveModal/>
       </div>
     </>
   )

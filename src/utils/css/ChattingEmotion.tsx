@@ -85,6 +85,6 @@ export const chatInput = css`
     height: 30px;
     padding: 10px;
     background: ${whiteInputBackground};
-    font-size: 25px;
+    font-size: 20px;
   }
 `
