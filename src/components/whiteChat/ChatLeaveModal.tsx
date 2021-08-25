@@ -6,7 +6,7 @@ import {
   chatLeaveContainer,
   flexcolum,
   modalBackground,
-} from "../../utils/css/ModalEmotion";
+} from "../../utils/css/WhiteModalEmotion";
 
 const ChatLeaveModal = () => {
   return (

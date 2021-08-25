@@ -1,2 +1,2 @@
-export { default as WhiteMain } from "./main/WhiteMain";
-export { default as Chatting } from "./chat/Chatting";
+export { default as WhiteMain } from "./whiteMain/WhiteMain";
+export { default as Chatting } from "./whiteChat/Chatting";

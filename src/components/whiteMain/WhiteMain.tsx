@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 
 import React, { FC, useState } from "react";
-import { mainWrapper, modeContainer } from "../../utils/css/EmotionComponent";
+import { mainWrapper, modeContainer } from "../../utils/css/WhiteEmotionComponent";
 import { whiteModeDarkIcon, whiteModeWhiteIcon } from "../assets";
 import MatchWait from "./MatchWait";
 import NicknameInput from "./NicknameInput";

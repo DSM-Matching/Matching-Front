@@ -1,7 +1,7 @@
 
 /** @jsxImportSource @emotion/react */
 
-import { matchContainer, matchLoadingBar, matchButton } from '../../utils/css/EmotionComponent';
+import { matchContainer, matchLoadingBar, matchButton } from '../../utils/css/WhiteEmotionComponent';
 import { matchingImg } from '../assets';
 
 const MatchWait = () => {

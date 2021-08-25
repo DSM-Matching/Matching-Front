@@ -1,6 +1,10 @@
 /** @jsxImportSource @emotion/react */
 
-import { dateList, header, modeChange } from "../../utils/css/ChattingEmotion";
+import {
+  dateList,
+  header,
+  modeChange,
+} from "../../utils/css/WhiteChattingEmotion";
 import {
   whiteModeChatOutIcon,
   whiteModeDarkIcon,
@@ -20,8 +24,8 @@ const ChatHeader = () => {
           <span>오후 09:54</span>
         </li>
         <li css={modeChange}>
-          <img src={whiteModeWhiteIcon} alt="화이트모드"/>
-          <img src={whiteModeDarkIcon} alt="다크모드"/>
+          <img src={whiteModeWhiteIcon} alt="화이트모드" />
+          <img src={whiteModeDarkIcon} alt="다크모드" />
         </li>
       </ul>
     </div>

@@ -5,7 +5,7 @@ import {
   inputContainer,
   inputTopItem,
   joinButton,
-} from "../../utils/css/EmotionComponent";
+} from "../../utils/css/WhiteEmotionComponent";
 
 interface NicknameProps {
   setChangeComponent?: any;
