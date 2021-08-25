@@ -3,25 +3,34 @@
 import {
   dateList,
   header,
+  leave,
   modeChange,
 } from "../../utils/css/WhiteChattingEmotion";
+
 import {
   whiteModeChatOutIcon,
   whiteModeDarkIcon,
   whiteModeWhiteIcon,
 } from "../assets";
 
-const ChatHeader = () => {
+import Clock from "react-live-clock";
+
+const ChatHeader = ({ setLeaveModal }: any) => {
   return (
     <div css={header}>
       <ul>
-        <li>
+        <li
+          onClick={() => {
+            setLeaveModal(true);
+          }}
+          css={leave}
+        >
           <img src={whiteModeChatOutIcon} alt="나가기 아이콘" />
           <span>나가기</span>
         </li>
         <li css={dateList}>
-          <span>2021년 8월 22일</span>
-          <span>오후 09:54</span>
+          <Clock format={"YYYY년 MM월 DD일"} ticking={true} />
+          <Clock format={"h:mm a"} ticking={true} />
         </li>
         <li css={modeChange}>
           <img src={whiteModeWhiteIcon} alt="화이트모드" />
