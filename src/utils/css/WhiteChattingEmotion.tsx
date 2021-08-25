@@ -22,11 +22,15 @@ export const header = css`
       display: flex;
       align-items: center;
 
-      & img{
+      & img {
         margin: 0px 10px 0px 10px;
       }
     }
   }
+`;
+
+export const leave = css`
+  cursor: pointer;
 `;
 
 export const dateList = css`
@@ -37,15 +41,15 @@ export const dateList = css`
 
 export const modeChange = css`
   margin-right: 30px;
-  & img{
+  & img {
     width: 50px;
     height: 50px;
   }
-`
+`;
 
 export const chatOutput = css`
   width: 100%;
-`
+`;
 
 export const chatInputContainer = css`
   width: 100%;
@@ -54,7 +58,7 @@ export const chatInputContainer = css`
   box-shadow: 0px -11px 8px rgba(253, 171, 230, 0.8);
   bottom: 0%;
   position: absolute;
-`
+`;
 
 export const inputItem = css`
   width: 100%;
@@ -66,25 +70,25 @@ export const inputItem = css`
   margin: 0;
   padding: 0;
 
-  & li{
+  & li {
     display: flex;
     align-items: center;
 
-    & img{
+    & img {
       margin: 0px 10px 0px 10px;
       cursor: pointer;
     }
   }
-`
+`;
 
 export const chatInput = css`
   width: 85%;
 
-  & input{
+  & input {
     width: 100%;
     height: 30px;
     padding: 10px;
     background: ${whiteInputBackground};
     font-size: 20px;
   }
-`
+`;
