@@ -12,10 +12,10 @@ interface NicknameProps {
 }
 
 const NicknameInput = ({ setChangeComponent }: NicknameProps) => {
-  const [inputState, setInputState] = useState<boolean>(false);
+  const [inputState, setInputState] = useState<string>("");
 
   const onchangeNickname = (e: any) => {
-    e.target.value.length === 0 ? setInputState(false) : setInputState(true);
+    setInputState(e.target.value);
   };
 
   return (
@@ -31,7 +31,7 @@ const NicknameInput = ({ setChangeComponent }: NicknameProps) => {
       <button
         css={joinButton}
         style={{
-          boxShadow: inputState ? "0px 0px 29px #F897DC" : "none",
+          boxShadow: inputState.length !== 0 ? "0px 0px 29px #F897DC" : "none",
         }}
         onClick={() => {
           setChangeComponent(true);
