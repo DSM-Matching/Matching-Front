@@ -1,12 +1,15 @@
 import React from "react";
 import "./App.css";
-import { Chatting, DarkMain } from "./components";
+import { WhiteMain, Chatting } from "./components";
+import { BrowserRouter, Route } from 'react-router-dom';
 
 function App() {
   return (
     <>
-      {/* <DarkMain /> */}
-      <Chatting />
+      <BrowserRouter>
+        <Route exact path="/" component={WhiteMain}/>
+        <Route exact path="/chatting" component={Chatting}/>
+      </BrowserRouter>
     </>
   );
 }
