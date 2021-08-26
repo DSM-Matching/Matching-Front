@@ -12,3 +12,4 @@ export { default as matchingImg } from './matchingImg.svg';
 export { default as whiteModeChatOutIcon } from './whiteModeChatOutIcon.svg';
 export { default as whitePhotoUploadIcon } from './whitePhotoUploadIcon.svg';
 export { default as whiteChatSendIcon } from './whiteChatSendIcon.svg';
+export { default as chating1 } from "./chating1.svg";
