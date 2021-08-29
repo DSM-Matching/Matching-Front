@@ -8,6 +8,7 @@ import NicknameInput from "./NicknameInput";
 
 const WhiteMain = () => {
   const [changeComponent, setChangeComponent] = useState<boolean>(false);
+  const [nickname, setNickname] = useState<string>("");
 
   return (
     <>
@@ -18,11 +19,11 @@ const WhiteMain = () => {
         </div>
         {changeComponent ? (
           <>
-            <MatchWait />
+            <MatchWait nickname={nickname} />
           </>
         ) : (
           <>
-            <NicknameInput setChangeComponent={setChangeComponent} />
+            <NicknameInput setChangeComponent={setChangeComponent} setNickname={setNickname} nickname={nickname}/>
           </>
         )}
       </div>
