@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Route path="/dark" component={DarkMain} exact />
-      <Route path="/dark/chatting" component={Chatting} exact />
+      <Route path="/dark/chatting/:nickname" component={Chatting} exact />
     </BrowserRouter>
   );
 }
