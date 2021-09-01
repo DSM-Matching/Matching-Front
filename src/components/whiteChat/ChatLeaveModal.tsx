@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import {
   buttonContainer,
   chatLeaveContainer,
@@ -9,7 +9,9 @@ import {
   modalBackground,
 } from "../../utils/css/WhiteModalEmotion";
 
-const ChatLeaveModal = ({ setLeaveModal }: any) => {
+const ChatLeaveModal = ({ setLeaveModal, ws }: any) => {
+  const history = useHistory();
+
   return (
     <>
       <div css={[modalBackground, flexcolum]}>
@@ -24,9 +26,14 @@ const ChatLeaveModal = ({ setLeaveModal }: any) => {
             >
               유지하기
             </button>
-            <Link to="/">
-              <button>나가기</button>
-            </Link>
+            <button
+              onClick={() => {
+                ws.close();
+                history.push("/");
+              }}
+            >
+              나가기
+            </button>
           </div>
         </div>
       </div>
