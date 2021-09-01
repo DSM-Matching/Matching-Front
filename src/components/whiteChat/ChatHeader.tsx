@@ -1,5 +1,6 @@
 /** @jsxImportSource @emotion/react */
 
+import React, {memo} from "react";
 import {
   dateList,
   header,
@@ -15,7 +16,8 @@ import {
 
 import Clock from "react-live-clock";
 
-const ChatHeader = ({ setLeaveModal }: any) => {
+const ChatHeader = memo(({ setLeaveModal }: any) => {
+
   return (
     <div css={header}>
       <ul>
@@ -39,6 +41,6 @@ const ChatHeader = ({ setLeaveModal }: any) => {
       </ul>
     </div>
   );
-};
+});
 
 export default ChatHeader;
