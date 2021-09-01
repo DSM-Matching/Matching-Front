@@ -8,6 +8,7 @@ import WaitItem from "./WaitItem";
 
 const DarkMain = () => {
   const [changeComponent, setChangeComponent] = useState<boolean>(false);
+  const [nickname, setNickName] = useState<string>("");
 
   return (
     <>
@@ -18,11 +19,14 @@ const DarkMain = () => {
         </div>
         {changeComponent ? (
           <>
-            <WaitItem />
+            <WaitItem nickname={nickname} />
           </>
         ) : (
           <>
-            <NickNameInput setChangeComponent={setChangeComponent} />
+            <NickNameInput
+              setNickName={setNickName}
+              setChangeComponent={setChangeComponent}
+            />
           </>
         )}
       </div>

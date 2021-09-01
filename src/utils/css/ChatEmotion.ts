@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import { darkInputBackground, darkMode } from "../color";
+import { darkChatItemColor, darkInputBackground, darkMode } from "../color";
 
 export const chatContainer = css`
   width: 100vw;
@@ -43,8 +43,40 @@ export const header = css`
   }
 `;
 
-export const chatOutput = css`
+export const chatOutputWrapper = css`
   width: 100%;
+`;
+
+export const chatItem = css`
+  width: auto;
+  height: auto;
+  color: white;
+  span {
+    font-size: 18px;
+    line-height: 26px;
+  }
+`;
+
+export const chatText = css`
+  p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .text {
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 50%;
+    padding: 10px;
+    font-size: 18px;
+    overflow: hidden;
+    height: auto;
+    color: white;
+    background-color: ${darkChatItemColor};
+    background: #8f00ff;
+    box-shadow: 0px 0px 13px rgba(0, 178, 255, 0.29);
+    border-radius: 15px;
+  }
 `;
 
 export const inputWrapper = css`
