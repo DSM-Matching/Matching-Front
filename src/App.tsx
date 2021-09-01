@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
         <Route exact path="/" component={WhiteMain}/>
-        <Route exact path="/chatting" component={Chatting}/>
+        <Route exact path="/chatting/:nickname" component={Chatting}/>
       </BrowserRouter>
     </>
   );
