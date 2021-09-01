@@ -1,6 +1,7 @@
 /** @jsxImportSource @emotion/react */
 
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import {
   firstContainer,
   inputBottomItem,
@@ -10,9 +11,10 @@ import {
 
 interface NickNameProps {
   setChangeComponent?: any;
+  setNickName: any;
 }
 
-const NickNameInput = ({ setChangeComponent }: NickNameProps) => {
+const NickNameInput = ({ setChangeComponent, setNickName }: NickNameProps) => {
   const [inputState, setInputState] = useState<boolean>(false);
 
   return (
@@ -22,15 +24,18 @@ const NickNameInput = ({ setChangeComponent }: NickNameProps) => {
         <input
           type="text"
           placeholder="your nickname"
-          onChange={(e) =>
+          onChange={(e) => {
             e.target.value.length === 0
               ? setInputState(false)
-              : setInputState(true)
-          }
+              : setInputState(true);
+            setNickName(e.target.value);
+          }}
         />
       </div>
       <div
-        onClick={() => setChangeComponent(true)}
+        onClick={() => {
+          setChangeComponent(true);
+        }}
         css={[inputTopItem, inputBottomItem]}
         style={{ boxShadow: inputState ? "0px 0px 29px #00b2ff" : "none" }}
       >
